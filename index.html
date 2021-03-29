@@ -40,9 +40,9 @@ alert("This file last modified " + docMod); // generates alert box with time sta
 console.log("This file last modified " + docMod); // generates message in javaScript console (found in developers tools) with time stamp. 
 
 function drawRectangle() {
-	var aRectangle = document.getElememtByID("a");
-	var aContext = aRectangle.getContext("2d");
-	aContext.fillRect(100,100,75,100);
+	var cRectangle = document.getElememtByID("a");
+	var cContext = aRectangle.getContext("2d");
+	aContext.fillRect(75,75,50,75);
 }
 	
 </script>
@@ -84,11 +84,11 @@ function drawRectangle() {
 </div>
 	
 <div>
-	<canvas id = "a" width = "400" class = "clear" style = "border:1px solid;float:center"></canvas>
+	<canvas id = "c" width = "400" class = "clear" style = "border:1px solid;float:center"></canvas>
 </div>
 
 <div>
-	<a onclick = "drawRectangle();" class="w3-btn w3-grey w3-round">Draw Rectangle </a>
+	<a onclick = "drawRectangle();" class="w3-btn w3-grey w3-rectangle">Draw Rectangle </a>
 
 <footer class="w3-bottom w3-container w3-flat-carrot">
 	<p>DIY!</p>
