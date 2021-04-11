@@ -44,7 +44,12 @@ function drawRectangle() {
 	var a_Context = a_canvas.getContext("2d");
 	a_Context.fillRect(50,25,150,100);
 }
-	
+
+	function drawName {   
+   var a_canvas = document.getElementById("a");
+   var a_context = a_canvas.getContext("2d");
+   a_context.fillText("Christian Martinez", 50, 75); 
+}
 </script>
 
 
@@ -89,6 +94,8 @@ function drawRectangle() {
 
 <div>
 	<center><button onclick = "drawRectangle;">Draw Rectangle</button><center>
+	
+	<center><button onclick = "draw_name();">Draw Name</button><center>
 
 <footer class="w3-bottom w3-container w3-flat-carrot">
 	<p>DIY!</p>
