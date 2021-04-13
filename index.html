@@ -4,16 +4,16 @@
 THIS CODE SHOULD NOT BE USED TO DIAGNOSE ANY KIND OF MEDICAL CONDITION.
 Authors in chronological order of contribution:
 Tim Riedel
-Author 2 
+Christian Martinez
 Further Information:
 http://cns.utexas.edu/fri 
 Research Educator:
 Timothy Riedel
 triedel@utexas.edu
 Brief Description of Goal of Code:
-blah, blah, blah,
+The goal of code is to display a canvas that can display a rectangle, my name, an image, and be cleared with corresponding buttons.
 Known Issues:
-blah, blah, blah, blah
+There are no known issues.
 https://www.w3schools.com/w3css/default.asp
 https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-file
 -->
@@ -31,30 +31,30 @@ var docMod = document.lastModified; // loads last modified time stamp into docMo
 alert("This file last modified " + docMod); // generates alert box with time stamp. If annoying, comment out this entire line.
 console.log("This file last modified " + docMod); // generates message in javaScript console (found in developers tools) with time stamp. 
 
-function drawRectangle() {
+function drawRectangle() { // This is function followed by variables to make the rectangle.
    var a_canvas = document.getElementById("a");
    var a_context = a_canvas.getContext("2d");
-   a_context.fillRect(50,25,35,50);
+   a_context.fillRect(50,25,35,50); // This is the code to make the dimensions of my rectangle. 
 }
 
-function drawName() {   
+function drawName() {   // This is the function to draw my name. 
    var a_canvas = document.getElementById("a");
    var a_context = a_canvas.getContext("2d");
-   a_context.fillText("Christian Martinez", 50, 125); 
+   a_context.fillText("Christian Martinez", 50, 125); // This is the correct code along with my name and the size of it that will be displayed on the canvas. 
 }
 	
-function drawImage() {
+function drawImage() { // This is the function to draw the image of my choice, which I made another file of. 
    var a_canvas = document.getElementById("a");
    var a_context = a_canvas.getContext("2d");
    var dog = new Image();
-	dog.src = "dog.jpeg";
-   a_context.drawImage(dog, 0, 0);
+	dog.src = "dog.jpeg"; // This is the function to call the other file that I mentioned and add it to my canvas. 
+   a_context.drawImage(dog, 0, 0); 
 }
 
-function clearCanvas(){
+function clearCanvas(){ // This codes for the function to clear my canvas and start it again. 
    var a_canvas = document.getElementById("a");
    var a_context = a_canvas.getContext("2d");
-   a_context.clearRect(0,0,300,200);
+   a_context.clearRect(0,0,300,200); // These are the dimensions of what to clear on my canvas, which I equally matched to the precise dimensions of said canvas. 
 }
 </script>
 
@@ -80,7 +80,7 @@ function clearCanvas(){
 }
 	
 </style>
-
+<!-- The above code is what makes the style for the app 6 page --> 
 <body>
 <div id="header" class="w3-container w3-flat-carrot">
 	<h1>App6---HTML5-Canvas</h1>
@@ -88,23 +88,24 @@ function clearCanvas(){
 	
 <div id="content" class="w3-container">
 	<center><canvas id = "a" width = "300" height = "200" style = "border : 1px solid #000000;"></canvas><center> 	
-
+<!-- The above format is the code that makes my bordered canvas with a width of 300 and height of 200 -->
 		
 	
 	<center><button onclick = "drawRectangle();">Draw Rectangle</button><center>
-	
+	<!-- This code creates the button to draw my rectangle -->
 	<center><button onclick = "drawName();">Draw Name</button><center>
-		
+	<!-- This code creates the button to write out my name-->	
 	<center><button onclick = "drawImage();">Draw Image</button><center>
-	
+	<!-- This code creates the button to present the image of my choice -->
 	<center><button onclick = "clearCanvas();">Clear Canvas</button><center>
+	<!-- This code creates the button to clear the whole canvas -->
 
 		
 <p>The following code has been developed by students and/or researchers of the Freshman Research Initiative DIY Diagnostics Stream at The University of Texas at     Austin.  This code is shared for demonstration purposes and should not be considered a product -- it is for entertainment purposes only. Any user of this code          does so at their own risk. Members of the DIY Stream, FRI, and The University of Texas system are not liable for anything related to this code.</p> 		
 <p>THIS CODE SHOULD NOT BE USED TO DIAGNOSE ANY KIND OF MEDICAL CONDITION.</p>		
 <footer class="w3-bottom w3-container w3-flat-carrot">
 	<p>DIY!</p>
-</footer>
+</footer> <!-- This is the code to show what will be shown below my canvas. -->
 
 </body>
 </html>
